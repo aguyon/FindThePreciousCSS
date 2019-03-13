@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="description" content="Quête Intégration Finale Part1 - Wild Code School">
+        <meta name="author" content="Alexis GUYON">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel=stylesheet href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        
+        
+        <title>FindThePrecious</title>
+    </head>
+
+    <body>
+        <header id="top">
+            <nav class="navbar navbar-collapse navbar-inverse navbar-expand-lg navbar-fixed-top navbar-dark">
+                <a class="navbar-brand" href="#top"><img id="logo" src="assets/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarResponsive" class="collapse navbar-collapse">
+                    <ul class="navbar-nav navbar-collapse navbar-right justify-content-end">    
+                        <li class="nav-item active"><a class="nav-link" href="#fellows">Fellows</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#reward">Reward</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#hunters">Hunters</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ring">The Ring</a></li>      
+                        <li class="nav-item"><a class="nav-link" href="#army">Join</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img class="slideImg" src="assets/dark_vador.jpg" style="width:100%">
+                <div class="text">Sauron is a very good bro, <br>please help him to find his ring !</div>
+            </div>
+            
+            <div class="mySlides">
+                <img class="slideImg" src="assets/sauron.png" style="width:100%">
+                <div class="text">Someone called me ?<br>I already have the ring !</div>
+            </div>
+            <div class="mySlides">
+                <img class="slideImg" src="assets/bg_gandalf.jpg" style="width:100%">
+                <div class="text">The ring is for Bilbo the Hobbit !</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>            
+        </div>
+
+
+        <section id="#fellows" class="sec-fellows">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 id="titre-fellows"><span class="symbole">ij </span>Fellows wanted dead<small> (or alive if you want to eat them later)</small><span class="symbole"> ij</span></h2>
+                        <ul class="nav nav-pills nav-justified">
+                            <li class="nav-item fellows">
+                                <a class="nav-link" href="#">Most Wanted</a>
+                            </li>
+                            <li class="nav-item fellows">
+                                <a class="nav-link active" href="#">Most Dangerous</a>
+                            </li>
+                            <li class="nav-item fellows">
+                                <a class="nav-link" href="#">Already Captured</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-5 col-lg-4">
+                        <div class="card">
+                            <img src="https://i.postimg.cc/xj6K7Grm/gandalf.png" class="gandalf card-img-top" alt="Gandalf">
+                            <div class="label">
+                                <h4>
+                                    <span class="txt-reward">Reward</span>
+                                    <br/>
+                                    <span class="price">1000</span><span class="txt-reward"> Golden Coins</span>
+                                </h4>
+                            </div>
+                            <div class="caption">Gandalf</div>
+                            <div class="card-body">
+                                <h4 class="card-title">A very dangerous wizard, killer...</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-5 col-lg-4">
+                        <div class="card">
+                            <img src="assets/aragorn.png" class="gandalf card-img-top" alt="Gandalf">
+                            <div class="label">
+                                <h4>
+                                    <span class="txt-reward">Reward</span>
+                                    <br/>
+                                    <span class="price">800</span><span class="txt-reward"> Golden Coins</span>
+                                </h4>
+                            </div>
+                            <div class="caption">Aragord</div>
+                            <div class="card-body">
+                                <h4 class="card-title">Sauron's finger says him is dangerous...</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-5 col-lg-4">
+                        <div class="card">
+                            <img src="assets/gimli.png" class="gandalf card-img-top" alt="Gandalf">
+                            <div class="label-dead">
+                                <h3>
+                                    <span class="dead" style="font-size: 1.5em;">Dead</span>
+                                </h3>
+                            </div>                            
+                            <div class="caption-gimli">Gimli</div>
+                            <div class="card-body">
+                                <h4 class="card-title">A dwarf, wich a beard and an axe...</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="#reward" class="sec-reward">
+            <div class="container">
+                <h2 class="titleH2"><span class="symbole">ij </span>I have captured one of them, how to get my reward ?<span class="symbole"> ij</span></h2>            
+                <div class="row">
+                    <div class="col-sm-12 col-md-8 col-lg-10">
+                        <p class="container-reward">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-2 coinSauron">
+                        <img class="coin-sauron" src="assets/coin_sauron.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="text-center"><button type="button" class="btn btn-secondary contact btn-lg">Contact Us</button></div>
+            </div>
+        </section>
+
+        <section id="#hunters" class="sec-hunters">
+            <div class="container">
+            <h2 class="titleH2"><span class="symbole">ij </span>Our best Hunters<span class="symbole"> ij</span></h2>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 mediaHunters">
+                        <div class="media">
+                            <img src="assets/hunter1.png" class="hunter" alt="ElvesKiller"></a>
+                            <div class="media-body">
+                                <h3 class="titleHunter">ElvesKiller22</h3>
+                                <p class="capture">2 Captures - <b><u>Profile</u></b></p>
+                                <button type="button" class="btn btn-secondary btn-sm like"><img src="assets/ring.png" class="ringImg">12 hace</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 mediaHunters">
+                        <div class="media">
+                            <img src="assets/hunter2.png" class="hunter" alt="Goblin45"></a>
+                            <div class="media-body">
+                                <h3 class="titleHunter">Goblin45</h3>
+                                <p class="capture">1 Capture - <b><u>Profile</u></b></p>
+                                <button type="button" class="btn btn-secondary btn-sm like"><img src="assets/ring.png" class="ringImg">18 hace</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="#ring" class="sec-ring">
+            <div class="container">
+                <h2 class="titleH2"><span class="symbole">ij </span>About the ring<span class="symbole"> ij</span></h2> 
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <h5 class="card-header"><b>Ring Capabilities</b></h5>
+                            <div class="card-body">
+                                <p class="card-text">What can our master Sauron do with the ring ?</p>
+                            </div>
+                            <table class="table table-bordered table-dark table-striped text-center justify-content-center">
+                                <thead>
+                                    <tr>
+                                        <th class="col-6">Feature</th>
+                                        <th class="col-6">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Main</td>
+                                        <td>One ring to rules them all</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Invisibility</td>
+                                        <td>You can't see me</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Power</td>
+                                        <td>Destroy the world</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <h5 class="card-header"><b>Why the ring is awesome ?</b></h5>
+                                    <div class="card-body">
+                                        <p class="card-text">My preciooooooussssss ! Hrk Hrk, we want our preecioooouuussss !!</p>                                 
+                                        <div class="col-2 offset-5">
+                                            <p class="card-text gollum"><span style="color: grey"><b>Gollum</b></span></p>
+                                        </div>
+                                        <div class="row justify-content-end">
+                                            <div class="col-2">
+                                                <a href="https://placeholder.com"><img src="https://via.placeholder.com/40" class="card-img-top circle-img" alt="" style="border-radius: 200px;"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="#army" class="sec-army">
+            <div class="container">
+                <h2 class="titleH2"><span class="symbole">ij </span>Join Mordor Army, we need you !<span class="symbole"> ij</span></h2>            
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-8">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <img src="assets/army.png" class="army" alt=""></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-8 col-lg-4">
+                        <img class="needYou" src="assets/weneedyou-1.png">
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-8 blockInfo">
+                        <div class="buttonInfo"><p class="textButton">More info on</p><button type="button" class="btn btn-secondary btn-lg buttonMoreInfo">SauronRulesThemAll.com</button></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="#contact" class="sec-contact">
+            <div class="container">
+                <h2 class="titleH2"><span class="symbole">ij </span>Contact Us<span class="symbole"> ij</span></h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="form-group">
+                                <label for="email"></label>
+                                <input type="email" class="form-control labelContact" id="exampleFormControlInput3" placeholder="@">
+                            </div>
+                            <div class="form-group">
+                                <label for="adress"></label>
+                                <input type="text" class="form-control labelContact" id="exampleFormControlInput2" placeholder="Adress">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1"></label>
+                                <select class="form-control labelContact" id="exampleFormControlSelect1">
+                                    <option>I have seen one of them</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1"></label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="12"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="map" src="assets/map.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <p>About Us</p>
+                        <p>Fellows</p>
+                        <p>Join our Army</p>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <p>FAQ</p>
+                        <p>Reward Conditions</p>
+                        <p>Legal Mentions</p>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <p>Sauron4Ever.com</p>
+                        <p>Follow on Twitter</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+            }
+        </script>
+    </body>
+</html>
